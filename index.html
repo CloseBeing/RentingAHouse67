@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агентство недвижимости 67 | Аренда жилья</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-</body>
-</html>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">Агентство недвижимости 67</div>
+            <nav class="nav">
+                <a href="#catalog" class="nav__link">Каталог</a>
+                <a href="#advantages" class="nav__link">Преимущества</a>
+                <a href="#steps" class="nav__link">Как мы работаем</a>
+            </nav>
+            <a href="https://утцзащитник.рф/?utm_source=yandex&utm_medium=poisk&utm_campaign=704832147&utm_group=5676955372&utm_content=17405289237&utm_term=---autotargeting&etext=2202.4qOP-f8a51qIPjd4VinU6JsJlNVXb3gMNMMvUJk7IWx4dGVpcml6ZnJhd2xmYXFr.30b38ab12ce3045b06a912b059c8173d62b4cb45&yclid=14815626097122607103&ybaip=1" class="btn btn--secondary">Написать в WhatsApp</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Честная аренда жилья от агентства <span>67</span></h1>
+                <p class="hero__subtitle">Подберем проверенную квартиру за 1 день без скрытых комиссий и фейковых объявлений.</p>
+                
+                <form class="hero__form" id="leadForm">
+                    <input type="text" placeholder="Ваш телефон или ник в Telegram" required class="hero__input">
+                    <button type="submit" class="btn btn--primary">Получить подборку</button>
+                </form>
+                <div class="form-success" id="successMessage">Заявка успешно отправлена! Мы свяжемся с вами.</div>
+            </div>
+            <div class="hero__image">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbUDNAtzlFS5-l1wIzmGC5nEnOFk_vsx3IIZgVp9XAg&s=10" alt="Стильный интерьер квартиры">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Быстрый выбор категории</h2>
+            <div class="catalog__grid">
+                <div class="catalog__card">
+                    <h3>Студии и 1-комнатные</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgColNLatZAGC79Ahxh8aiW3Pbr_LiSvKzGNjv3qZ2w&s=10" alt="">
+                    <p>Оптимальные варианты для молодых пар и студентов.</p>
+                    <a href="#" class="catalog__link">Смотреть варианты →</a>
+                </div>
+                <div class="catalog__card">
+                    <h3>Для семей с детьми</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUgNhY69AZt7Sh2nrjMRhe7ZYVfrh1HuQuKSHJQxrkw&s=10" alt="">
+                    <p>Просторные квартиры в спальных районах рядом со школами.</p>
+                    <a href="#" class="catalog__link">Смотреть варианты →</a>
+                </div>
+                <div class="catalog__card">
+                    <h3>Бизнес и Премиум</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTh7jNBzbqFXfNHtcsMq0PIfzEpGpaFL4f922SEdlxVQ&s=10" alt="">
+                    <p>Квартиры с дизайнерским ремонтом в центре города.</p>
+                    <a href="#" class="catalog__link">Смотреть варианты →</a>
+                </div>
+                <div class="catalog__card catalog__card--accent">
+                    <h3>Хотите сдать жилье?</h3>
+                    <p>Найдем надежных жильцов бесплатно для собственника.</p>
+                    <a href="#" class="catalog__link">Оставить заявку →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages_grid">
+                <div class="adv-item">
+                    <div class="adv-item_number">67 мин</div>
+                    <p class="adv-item_text">Среднее время от вашей заявки до первой подборки реальных объектов</p>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-number">100%</div>
+                    <p class="adv-item_text">Безопасность. Заселяем строго по юридическому договору</p>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-item_number">0 руб</div>
+                    <p class="adv-item_text">Предоплаты. Вы платите комиссию только в момент заселения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Локальное агентство недвижимости «67». Все права защищены.</p>
+        </div>
+    </footer>
